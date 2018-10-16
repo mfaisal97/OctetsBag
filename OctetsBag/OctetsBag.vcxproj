@@ -115,6 +115,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="OctetBag.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OctetBag.cpp" />
+    <ClCompile Include="OctetBagTest.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
