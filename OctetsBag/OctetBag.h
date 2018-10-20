@@ -5,18 +5,18 @@ class OctetBag
 {
 private:
 	CountType * Data;
-	unsigned __int8 MaxElement;
+	const unsigned __int8 MaxElement;
 
 public:
 	OctetBag();
 	OctetBag(const OctetBag &);
-	OctetBag(unsigned __int8);
+	OctetBag(int);
 	~OctetBag();
 
-	void Add(unsigned __int8);
-	void Remove(const unsigned __int8);
-	bool HasElement(const unsigned __int8) const;
-	CountType HasCount(const unsigned __int8) const;
+	void Insert(int);
+	void Remove(const int);
+	bool HasElement(const int) const;
+	CountType HasCount(const int) const;
 	void PrintElements();
 };
 
